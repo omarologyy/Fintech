@@ -36,8 +36,8 @@ function Price() {
         {/* CARDS */}
         <div className="space-y-4 m-4">
           {/* FIRST CARD*/}
-          <div className="bg-yellow-300 rounded-3xl w-72 h-72 flex flex-col items-center justify-center">
-            <div className="bg-white rounded-2xl w-full h-full mt-5 text-black text-center">
+          <div className="bg-yellow-300 rounded-3xl items-center flex justify-center">
+            <div className="bg-white rounded-2xl w-full max-w-xs mt-5 p-2 text-black text-center flex flex-col">
               <h1 className="m-2">Tier One</h1>
               <h1 className="m-2">Free</h1>
               <p className="text-gray-400 text-sm">pay per transaction</p>
@@ -46,44 +46,52 @@ function Price() {
                 Best for Small Businesses
               </p>
               <hr className="border-green-800 my-4" />
-              <button className="border-2 border-green-700 text-green-600 px-4 py-2.5 rounded-full text-sm font-medium hover:bg-gray-100 flex items-center justify-center space-x-1">
-                <span>Learn More</span>
+              <button className="border-2 border-green-700 text-green-600 px-4 py-2.5 rounded-full text-sm font-medium hover:bg-gray-100 flex items-center justify-center space-x-1 w-fit mx-auto">
+                <span>Get Started</span>
                 <IoIosArrowRoundForward className="h-5 w-5" />
               </button>
+              <p className="underline cursor-pointer text-gray-400 text-sm m-2">
+                What's Included
+              </p>
             </div>
           </div>
           {/* SECOND CARD */}
-          <div className="bg-green-300 rounded-3xl w-72 h-72 flex flex-col items-center justify-center">
-            <div className="bg-white rounded-2xl w-full h-full mt-5 text-black text-center">
-              <h1 className="m-2">Tier One</h1>
-              <h1 className="m-2">Free</h1>
-              <p className="text-gray-400 text-sm">pay per transaction</p>
+          <div className="bg-green-300 rounded-3xl items-center flex justify-center">
+            <div className="bg-white rounded-2xl w-full max-w-xs mt-5 p-2 text-black text-center flex flex-col">
+              <h1 className="m-2">Tier Two</h1>
+              <h1 className="m-2">₦50,000</h1>
+              <p className="text-gray-400 text-sm">per month</p>
               <hr className="border-green-800 my-4" />
               <p className="p-2 text-center text-md">
-                Best for Small Businesses
+                Best for growing Businesses
               </p>
               <hr className="border-green-800 my-4" />
-              <button className="border-2 border-green-700 text-green-600 px-4 py-2.5 rounded-full text-sm font-medium hover:bg-gray-100 flex items-center justify-center space-x-1">
-                <span>Learn More</span>
+              <button className="border-2 border-green-700 text-green-600 px-4 py-2.5 rounded-full text-sm font-medium hover:bg-gray-100 flex items-center justify-center space-x-1 w-fit mx-auto">
+                <span>Get Started</span>
                 <IoIosArrowRoundForward className="h-5 w-5" />
               </button>
+              <p className="underline text-gray-400 cursor-pointer text-sm m-2">
+                What's Included
+              </p>
             </div>
           </div>
           {/* THIRD CARD*/}
-          <div className="bg-blue-300 rounded-3xl w-72 h-72 flex flex-col items-center justify-center">
-            <div className="bg-white rounded-2xl w-full h-full mt-5 text-black text-center">
-              <h1 className="m-2">Tier One</h1>
-              <h1 className="m-2">Free</h1>
-              <p className="text-gray-400 text-sm">pay per transaction</p>
+          <div className="bg-blue-300 rounded-3xl items-center flex justify-center">
+            <div className="bg-white rounded-2xl w-full max-w-xs mt-5 p-2 text-black text-center flex flex-col">
+              <h1 className="m-2">Tier Three</h1>
+              <h1 className="m-2">Custom</h1>
               <hr className="border-green-800 my-4" />
               <p className="p-2 text-center text-md">
-                Best for Small Businesses
+                Best for Large-Scale Businesses
               </p>
               <hr className="border-green-800 my-4" />
-              <button className="border-2 border-green-700 text-green-600 px-4 py-2.5 rounded-full text-sm font-medium hover:bg-gray-100 flex items-center justify-center space-x-1">
-                <span>Learn More</span>
+              <button className="border-2 border-green-700 text-green-600 px-4 py-2.5 rounded-full text-sm font-medium hover:bg-gray-100 flex items-center justify-center space-x-1 w-fit mx-auto">
+                <span>Get Started</span>
                 <IoIosArrowRoundForward className="h-5 w-5" />
               </button>
+              <p className="underline cursor-pointer text-gray-400 text-sm m-2">
+                What's Included
+              </p>
             </div>
           </div>
         </div>
@@ -93,23 +101,3 @@ function Price() {
 }
 
 export default Price;
-
-{
-  /* <p className="text-sm text-white m-2">
-              <span>Pedmonie made it easier to</span>
-              <br />
-              <span>collect payments from my</span>
-              <br />
-              <span>customers worldwide!</span>
-            </p>
-            <div className="flex flex-row pt-10">
-              <div className="flex flex-col text-white m-3">
-                <h2 className="text-sm font-bold">Ronald Richards</h2>
-                <p className="text-xs">
-                  <span>Ceo and Co-founder</span>
-                  <br />
-                  <span>of XYZ Company</span>
-                </p>
-              </div>
-            </div> */
-}
