@@ -11,8 +11,8 @@ function Hero() {
   return (
     <>
       {/* DESKTOP VIEW */}
-      <div className="hidden lg:flex m-5">
-        <div className="flex flex-row justify-between items-start w-full">
+      <div className="hidden lg:flex bg-gray-100">
+        <div className="flex flex-row justify-between items-start w-full m-5">
           {/* FIRST COLUMN */}
           <div className="flex flex-col m-4">
             <button className="bg-green-100 text-black px-4 py-2 rounded-full flex flex-row text-sm font-medium hover:bg-gray-100 items-center w-fit space-x-2">
