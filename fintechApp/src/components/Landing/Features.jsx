@@ -18,7 +18,7 @@ function Features() {
       <div className="bg-gray-200">
         {/* DESKTOP & TABLET VIEW */}
         <div
-          className="hidden md:block min-h-screen bg-cover bg-center p-4"
+          className="hidden md:block min-h-fit bg-cover bg-center p-4"
           style={{ backgroundImage: `url(${Desktop})` }}
         >
           {/* Partnerships */}
@@ -123,7 +123,7 @@ function Features() {
                 Process payments in seconds with bank-level security to keep
                 your business and customers safe.
               </p>
-              <a href="#" className="text-xs hover:underline text-black m-3">
+              <a href="#" className="text-xs hover:underline text-black mt-1">
                 Learn More
               </a>
             </div>
@@ -131,7 +131,27 @@ function Features() {
         </div>
       </div>
       {/* MOBILE VIEW */}
-      <div className="md:hidden flex flex-col justify-center items-center m-4">
+      <div className="md:hidden flex flex-col justify-center items-center mt-4">
+        {/* Green Background */}
+        <div className="flex flex-col bg-[#2E5C38] w-full m-2">
+          <div className="flex flex-row space-x-6 text-white justify-between items-center p-2">
+            {/* FIRST COLUMN */}
+            <div className="flex flex-col justify-start items-start">
+              <p className="text-2xl font-bold">100k+</p>
+              <p>Payments daily</p>
+            </div>
+            {/* SECOND COLUMN */}
+            <div className="flex flex-col justify-start items-start">
+              <p className="text-2xl font-bold">5M</p>
+              <p>API calls</p>
+            </div>
+            {/* THIRD COLUMN */}
+            <div className="flex flex-col justify-center items-center ">
+              <p className="text-2xl font-bold">6</p>
+              <p>Payments Options</p>
+            </div>
+          </div>
+        </div>
         <div className="text-center items-center">
           <h1 className="font-bold text-3xl">
             <span>Powerful Features</span>
@@ -180,7 +200,7 @@ function Features() {
             </a>
           </div>
           {/* CARD 3 */}
-          <div className="bg-black rounded-3xl p-6 w-72 h-72 flex flex-col text-center">
+          <div className="bg-black rounded-3xl p-6 w-72 h-72 flex flex-col text-center ">
             <img src={Protect} alt="Logos" className="h-10 w-auto m-2" />
             <h3 className="font-bold text-lg text-white m-2 ">
               Fast & Secure Transactions
