@@ -1,1 +1,37 @@
 @import "tailwindcss";
+
+@keyframes scroll-continuous {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  animation: scroll-continuous 30s linear infinite;
+  width: max-content;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
+
+.animate-dir {
+  animation-direction: reverse;
+  animation: scroll-continuous 40s linear infinite;
+}
+
+/* 🔧 Fix unwanted horizontal scrolling */
+html,
+body {
+  overflow-x: hidden; /* Prevents page-wide horizontal scroll */
+}
+
+/* 🔒 Optional: ensures scroll area never exceeds viewport */
+.scroll-container {
+  max-width: 100vw; /* Constrains scroll animation area */
+  overflow: hidden;
+}
