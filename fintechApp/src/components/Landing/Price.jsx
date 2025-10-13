@@ -144,7 +144,7 @@ function Price() {
         </div>
       </div>
       {/* TABLET VIEW */}
-      <div className="lg:hidden md:flex flex-col justify-center items-center text-center bg-black">
+      <div className="hidden md:flex lg:hidden flex-col justify-center items-center text-center bg-black">
         <div className="flex flex-col justify-center items-center text-center text-white p-8">
           <h1 className="font-medium text-4xl p-6">
             Pricing That Fits Your Business
