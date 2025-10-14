@@ -85,7 +85,7 @@ function FAQs() {
         </div>
         {/* TABLET VIEW */}
         <div
-          className="hidden lg:hidden md:flex flex-col justify-center items-center bg-cover bg-center rounded-3xl mt-6 mx-auto max-w-2xl w-full relative overflow-hidden"
+          className="hidden lg:hidden md:block flex-col justify-center items-center bg-cover bg-center rounded-3xl mt-6 mx-auto max-w-2xl w-full relative overflow-hidden"
           style={{
             backgroundImage: `url(${Faq})`,
             backgroundSize: "cover",
@@ -96,7 +96,7 @@ function FAQs() {
           {/* Overlay for better contrast */}
           <div className="absolute inset-0 bg-white/70 rounded-3xl"></div>
 
-          {/* Content with proper padding */}
+          {/* Content */}
           <div className="relative z-10 p-8 w-full text-center">
             <h1 className="mt-5 font-bold text-3xl">
               <span>Frequently Asked Questions (FAQs)</span>
