@@ -1,0 +1,10 @@
+export { default as Navbar } from "./Navbar";
+export { default as Hero } from "./Hero";
+export { default as Features } from "./Features";
+export { default as Payment } from "./Payment";
+export { default as Praises } from "./Praises";
+export { default as Price } from "./Price";
+export { default as Devs } from "./Devs";
+export { default as FAQs } from "./FAQs";
+export { default as Questions } from "./Questions";
+export { default as Footer } from "./Footer";
