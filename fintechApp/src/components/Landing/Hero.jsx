@@ -1,11 +1,11 @@
 import React from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import flutterwave from "../../svgs/flutterwave.svg";
-import opay from "../../svgs/opay.svg";
-import trivago from "../../svgs/trivago.svg";
-import paystack from "../../svgs/paystack.svg";
-import globe from "../../svgs/globe.svg";
-import market from "../../images/market.png";
+import flutterwave from "@/svgs/flutterwave.svg";
+import opay from "@/svgs/opay.svg";
+import trivago from "@/svgs/trivago.svg";
+import paystack from "@/svgs/paystack.svg";
+import globe from "@/svgs/globe.svg";
+import market from "@/images/market.png";
 
 function Hero() {
   return (

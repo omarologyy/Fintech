@@ -1,16 +1,13 @@
 import React from "react";
-import Bg1 from "../../svgs/Bg.svg";
-import Bg2 from "../../svgs/Frame2.svg";
-import Background from "../../svgs/Bg.svg";
-import flutterwave from "../../svgs/flutterwave.svg";
-import opay from "../../svgs/opay.svg";
-import trivago from "../../svgs/trivago.svg";
-import paystack from "../../svgs/paystack.svg";
-import EasyUse from "../../svgs/EasyUse.svg";
-import Protect from "../../svgs/Protect.svg";
-import Green from "../../svgs/Green.svg";
-import FreeTransaction from "../../svgs/FreeTransaction.svg";
-import Desktop from "../../images/VectorBg.jpg";
+import flutterwave from "@/svgs/flutterwave.svg";
+import opay from "@/svgs/opay.svg";
+import trivago from "@/svgs/trivago.svg";
+import paystack from "@/svgs/paystack.svg";
+import EasyUse from "@/svgs/EasyUse.svg";
+import Protect from "@/svgs/Protect.svg";
+import Green from "@/svgs/Green.svg";
+import FreeTransaction from "@/svgs/FreeTransaction.svg";
+import Desktop from "@/images/VectorBg.jpg";
 
 function Features() {
   return (

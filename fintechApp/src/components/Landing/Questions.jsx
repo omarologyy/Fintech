@@ -1,6 +1,6 @@
 import React from "react";
-import Background from "../../images/BgG.jpg";
-import Woman from "../../images/Woman.png";
+import Background from "@/images/BgG.jpg";
+import Woman from "@/images/Woman.png";
 function Questions() {
   return (
     <>

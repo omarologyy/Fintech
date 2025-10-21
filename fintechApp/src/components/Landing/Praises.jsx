@@ -1,13 +1,13 @@
 import React from "react";
-import colon from "../../svgs/colon.svg";
-import colo from "../../svgs/colo.svg";
-import Cameron from "../../svgs/Cameron.svg";
-import Henry from "../../svgs/Henry.svg";
-import Marvin from "../../svgs/Marvin.svg";
-import McCoy from "../../svgs/McCoy.svg";
-import Ronald from "../../svgs/Ronald.svg";
-import Theresa from "../../svgs/Theresa.svg";
-import Man from "../../images/Man.png";
+import colon from "@/svgs/colon.svg";
+import colo from "@/svgs/colo.svg";
+import Cameron from "@/svgs/Cameron.svg";
+import Henry from "@/svgs/Henry.svg";
+import Marvin from "@/svgs/Marvin.svg";
+import McCoy from "@/svgs/McCoy.svg";
+import Ronald from "@/svgs/Ronald.svg";
+import Theresa from "@/svgs/Theresa.svg";
+import Man from "@/images/Man.png";
 
 function Praises() {
   return (

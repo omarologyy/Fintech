@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FiMinus, FiPlus } from "react-icons/fi";
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
-import Faq from "../../images/FB.jpg";
+import Faq from "@/images/FB.jpg";
 
 function FAQs() {
   const [openIndex, setOpenIndex] = useState(null);

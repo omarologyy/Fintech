@@ -10,7 +10,8 @@ import {
   FAQs,
   Questions,
   Footer,
-} from "./components/Landing/index.js";
+} from "@/components/Landing/index.js";
+
 function Home() {
   return (
     <>

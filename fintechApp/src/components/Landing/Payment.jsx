@@ -1,7 +1,7 @@
 import React from "react";
-import Background from "../../images/BgG.jpg";
-import Backing from "../../images/trialTwo.jpg";
-import Vector from "../../svgs/Vector.svg";
+import Background from "@/images/BgG.jpg";
+import Backing from "@/images/trialTwo.jpg";
+import Vector from "@/svgs/Vector.svg";
 import { MdArrowOutward } from "react-icons/md";
 
 function Payment() {
