@@ -34,6 +34,9 @@ import Sms from "@/components/Merchant/User/Sms.jsx";
 import Two from "@/components/Merchant/User/TwoFactorAuth/Two.jsx";
 import One from "@/components/Merchant/User/TwoFactorAuth/One.jsx";
 import Three from "./components/Merchant/User/TwoFactorAuth/Three.jsx";
+import Identity from "./components/Merchant/User/Identity.jsx";
+import BRN from "./components/Merchant/User/BRN.jsx";
+import BVN from "./components/Merchant/User/BVN.jsx";
 
 const router = createBrowserRouter([
   {
@@ -63,6 +66,18 @@ const router = createBrowserRouter([
   {
     path: "/signup/twofactorstepthree",
     element: <Three />,
+  },
+  {
+    path: "/signup/bank-verification",
+    element: <BVN />,
+  },
+  {
+    path: "/signup/identity",
+    element: <Identity />,
+  },
+  {
+    path: "/signup/bank-registration-number",
+    element: <BRN />,
   },
   {
     path: "/login",
