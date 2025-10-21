@@ -1,5 +1,5 @@
 import React from "react";
-import Background from "../../images/BgG.jpg";
+import Background from "@/images/BgG.jpg";
 import { IoIosArrowRoundForward } from "react-icons/io";
 function Price() {
   return (

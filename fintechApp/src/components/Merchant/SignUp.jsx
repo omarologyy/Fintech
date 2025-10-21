@@ -1,14 +1,18 @@
 import React, { useState } from "react";
-import google from "../../svgs/google.svg";
-import dots from "../../svgs/dots.svg";
-import overlayPic from "../../svgs/overlayPic.svg";
-import ellipse from "../../images/ellipse.png";
-import SignUpBg from "../../images/SignUpBg.jpg";
-import Logo from "../../svgs/MainLogo.svg";
+import google from "@/svgs/google.svg";
+import dots from "@/svgs/dots.svg";
+import overlayPic from "@/svgs/overlayPic.svg";
+import ellipse from "@/images/ellipse.png";
+import SignUpBg from "@/images/SignUpBg.jpg";
+import Logo from "@/svgs/MainLogo.svg";
 import { LuUserRound } from "react-icons/lu";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { FaPhone, FaLock, FaEye, FaEyeSlash } from "react-icons/fa";
 import { SlCalender } from "react-icons/sl";
+import { Link, Outlet, useNavigate } from "react-router-dom";
+import Sms from "./User/Sms";
+import One from "./User/TwoFactorAuth/One";
+import Two from "./User/TwoFactorAuth/Two";
 
 function SignUp() {
   const [formData, setFormData] = useState({
@@ -32,6 +36,8 @@ function SignUp() {
   const isFormComplete = Object.values(formData).every(
     (val) => val.trim() !== ""
   );
+
+  const navigate = useNavigate();
 
   return (
     <>
@@ -191,8 +197,11 @@ function SignUp() {
             {/* Buttons */}
             <div className="flex flex-row space-x-4 items-center justify-center w-full mt-2">
               <button
-                type="submit"
+                type="button" // ✅ change from submit
                 disabled={!isFormComplete}
+                onClick={() => {
+                  if (isFormComplete) navigate("email");
+                }}
                 className={`${
                   isFormComplete
                     ? "bg-green-700 cursor-pointer"
@@ -218,9 +227,9 @@ function SignUp() {
             <div className="text-center">
               <p className="text-sm">
                 Already have an account?{" "}
-                <span className="text-green-600 font-medium cursor-pointer">
+                <Link to="/login" className="text-green-600 font-medium">
                   Login
-                </span>
+                </Link>
               </p>
             </div>
           </form>
@@ -405,9 +414,9 @@ function SignUp() {
             <div className="text-center">
               <p className="text-sm">
                 Already have an account?{" "}
-                <span className="text-green-600 font-medium cursor-pointer">
+                <Link to="/login" className="text-green-600 font-medium">
                   Login
-                </span>
+                </Link>
               </p>
             </div>
           </form>
@@ -592,9 +601,9 @@ function SignUp() {
             <div className="text-center">
               <p className="text-sm">
                 Already have an account?{" "}
-                <span className="text-green-600 font-medium cursor-pointer">
+                <Link to="/login" className="text-green-600 font-medium">
                   Login
-                </span>
+                </Link>
               </p>
             </div>
           </form>

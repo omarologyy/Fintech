@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../../svgs/MainLogo.svg";
+import Logo from "@/svgs/MainLogo.svg";
 import { IoClose } from "react-icons/io5";
 // import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 function Navbar() {

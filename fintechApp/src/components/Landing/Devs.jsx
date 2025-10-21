@@ -1,7 +1,7 @@
 import React from "react";
-import People from "../../images/People.png";
-import video from "../../svgs/video.svg";
-import meeting from "../../svgs/meeting.svg";
+import People from "@/images/People.png";
+import video from "@/svgs/video.svg";
+import meeting from "@/svgs/meeting.svg";
 
 function Devs() {
   return (
