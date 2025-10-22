@@ -28,6 +28,9 @@ function Two() {
   const nextPage = () => {
     navigate("/signup/twofactorstepthree");
   };
+  const prevPage = () => {
+    navigate("/signup/twofactorstepone");
+  };
 
   const handleCopy = async () => {
     if (formData.email.trim() !== "") {
@@ -130,6 +133,7 @@ function Two() {
           <div className="flex flex-row space-x-4 items-start justify-center w-full mt-2">
             <button
               type="button"
+              onClick={prevPage}
               disabled={!isFormComplete}
               className={`${
                 isFormComplete
@@ -137,7 +141,7 @@ function Two() {
                   : "bg-gray-300 cursor-not-allowed"
               } text-white px-8 py-2.5 rounded-lg text-sm font-medium flex items-center justify-center transition`}
             >
-              Resend Email
+              Previous
             </button>
 
             <button

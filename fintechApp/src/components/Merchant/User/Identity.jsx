@@ -25,7 +25,10 @@ function BVN() {
   };
 
   const nextPage = () => {
-    navigate("/signutwofactorstepthree");
+    navigate("/signup/business-registration-number");
+  };
+  const prevPage = () => {
+    navigate("/signup/bank-verification");
   };
 
   return (
@@ -94,8 +97,8 @@ function BVN() {
               <form className="mt-6 w-full">
                 <div className="flex flex-row space-x-4">
                   <div className="flex flex-col">
-                    <label>Hello</label>
-                    <div className="flex justify-between items-center border border-gray-300 rounded-md px-3 py-1 w-full">
+                    <label className="text-sm">Select document type</label>
+                    <div className="flex justify-between items-center border border-gray-300 rounded-md px-3 py-1 w-full mt-2">
                       <input
                         name="tel"
                         type="text"
@@ -107,8 +110,8 @@ function BVN() {
                     </div>
                   </div>
                   <div className="flex flex-col">
-                    <label>Hello</label>
-                    <div className="flex justify-between items-center border border-gray-300 rounded-md px-3 py-1 w-full">
+                    <label className="text-sm">Government issued country</label>
+                    <div className="flex justify-between items-center border border-gray-300 rounded-md px-3 py-1 w-full mt-2">
                       <input
                         name="tel"
                         type="text"
@@ -133,8 +136,9 @@ function BVN() {
             <div className="flex flex-row space-x-4 items-start justify-center w-full mt-2">
               <button
                 type="button"
+                onClick={prevPage}
                 disabled={!isFormComplete}
-                className="bg-[#2E5C38] cursor-pointer text-white px-8 py-2.5 rounded-lg text-sm font-medium flex items-center justify-center transition"
+                className="bg-gray-500 cursor-pointer text-white px-8 py-2.5 rounded-lg text-sm font-medium flex items-center justify-center transition"
               >
                 Previous
               </button>
@@ -142,7 +146,7 @@ function BVN() {
               <button
                 type="button"
                 onClick={nextPage}
-                className="bg-gray-500 cursor-pointer text-white px-12 py-2.5 rounded-lg text-sm font-medium flex items-center justify-center space-x-1 transition"
+                className=" bg-[#2E5C38] cursor-pointer text-white px-12 py-2.5 rounded-lg text-sm font-medium flex items-center justify-center space-x-1 transition"
               >
                 <span>Next</span>
               </button>

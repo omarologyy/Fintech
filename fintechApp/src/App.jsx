@@ -76,7 +76,7 @@ const router = createBrowserRouter([
     element: <Identity />,
   },
   {
-    path: "/signup/bank-registration-number",
+    path: "/signup/business-registration-number",
     element: <BRN />,
   },
   {
