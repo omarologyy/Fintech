@@ -13,6 +13,9 @@ function One() {
   const nextPage = () => {
     navigate("/signup/twofactorsteptwo");
   };
+  const prevPage = () => {
+    navigate("/signup/sms");
+  };
   return (
     <>
       <div className="hidden lg:flex flex-row h-screen space-x-20 overflow-hidden">
@@ -99,6 +102,7 @@ function One() {
             <div className="flex flex-row space-x-4 items-center justify-start w-3/4 mt-2">
               <button
                 type="button"
+                onClick={prevPage}
                 className="bg-[#2E5C38] cursor-pointer text-white px-20 py-2.5 rounded-lg text-sm font-medium flex items-center justify-center transition"
               >
                 Previous

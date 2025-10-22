@@ -28,6 +28,9 @@ function Three() {
   const nextPage = () => {
     navigate("/signup/bank-verification");
   };
+  const prevPage = () => {
+    navigate("/signup/twofactorsteptwo");
+  };
 
   const handleCopy = async () => {
     if (formData.email.trim() !== "") {
@@ -61,11 +64,11 @@ function Three() {
                 <span>Download app</span>
               </div>
               <div className="flex flex-row items-center text-sm w-fit space-x-2 text-green-700">
-                <BsShieldCheck />
+                <IoShieldOutline />
                 <span>Backup Secret key</span>
               </div>
               <div className="flex flex-row items-center text-sm w-fit space-x-2 text-gray-400">
-                <IoShieldOutline />
+                <BsShieldCheck />
                 <span>Scan QR code</span>
               </div>
             </div>
@@ -130,6 +133,7 @@ function Three() {
             <div className="flex flex-row space-x-4 items-start justify-center w-full mt-2">
               <button
                 type="button"
+                onClick={prevPage}
                 disabled={!isFormComplete}
                 className={`${
                   isFormComplete
@@ -137,7 +141,7 @@ function Three() {
                     : "bg-gray-300 cursor-not-allowed"
                 } text-white px-20 py-3 rounded-lg text-xs font-medium flex items-center justify-center transition`}
               >
-                Resend Email
+                Previous
               </button>
 
               <button
@@ -154,11 +158,6 @@ function Three() {
               </button>
             </div>
           </div>
-
-          {/* Feedback message */}
-          {/* {copied && (
-            <p className="text-green-600 text-xs mt-1">Copied to clipboard!</p>
-          )} */}
         </div>
       </div>
     </>

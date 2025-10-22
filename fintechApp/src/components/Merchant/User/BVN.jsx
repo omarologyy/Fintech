@@ -26,6 +26,9 @@ function BVN() {
   const nextPage = () => {
     navigate("/signup/identity");
   };
+  const prevPage = () => {
+    navigate("/signup/twofactorstepthree");
+  };
 
   return (
     <>
@@ -82,6 +85,7 @@ function BVN() {
             <div className="flex flex-row space-x-4 items-start justify-center w-full mt-2">
               <button
                 type="button"
+                onClick={prevPage}
                 disabled={!isFormComplete}
                 className="bg-[#2E5C38] cursor-pointer text-white px-8 py-2.5 rounded-lg text-sm font-medium flex items-center justify-center transition"
               >
