@@ -9,10 +9,7 @@ import { LuUserRound } from "react-icons/lu";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { FaPhone, FaLock, FaEye, FaEyeSlash } from "react-icons/fa";
 import { SlCalender } from "react-icons/sl";
-import { Link, Outlet, useNavigate } from "react-router-dom";
-import Sms from "./User/Sms";
-import One from "./User/TwoFactorAuth/One";
-import Two from "./User/TwoFactorAuth/Two";
+import { Link, useNavigate } from "react-router-dom";
 
 function SignUp() {
   const [formData, setFormData] = useState({
